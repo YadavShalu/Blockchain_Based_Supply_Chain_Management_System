@@ -13,7 +13,7 @@ We are committed to fostering a positive and inclusive community. We expect all 
 2. **Clone the Repository**: Clone your forked repository to your local machine using:
 
     ```bash
-    git clone https://github.com/YadavShalu/Credit_Card_Fraud_Detection.git
+    git clone https://github.com/YadavShalu/Blockchain_Based_Supply_Chain_Management_System.git
     ```
 
 3. **Create a New Branch**: Create a new branch for your contribution. Please give it a descriptive name related to the issue or feature you are working on:
