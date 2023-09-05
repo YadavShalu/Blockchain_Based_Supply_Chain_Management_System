@@ -1,5 +1,3 @@
-Certainly, let's provide a bit more information in the documentation:
-
 # Blockchain-based Supply Chain Management System Documentation
 
 ## Introduction
@@ -61,6 +59,3 @@ We encourage contributions from the community. To contribute to the project, ple
 
 This project is licensed under the [MIT License](./LICENSE.md).
 
----
-
-This expanded documentation offers a clearer understanding of how your system operates and how users can interact with it. Users should be able to get started and use the system effectively with this information.# Blockchain-based-Supply-Chain-Management-System
