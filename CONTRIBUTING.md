@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-Thank you for considering contributing to the Credit Card Fraud Detection project! Your contributions are valuable in enhancing the accuracy and reliability of fraud detection in the financial sector. Please take a moment to review these guidelines before getting started.
+Thank you for considering contributing to the Blockchain Based Supply Chain Management System project! Your contributions are valuable in enhancing the accuracy and reliability of fraud detection in the financial sector. Please take a moment to review these guidelines before getting started.
 
 ## Code of Conduct
 
@@ -62,4 +62,4 @@ If you encounter bugs, issues, or have suggestions for improvements, please open
 
 By contributing to this project, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
 
-Thank you for your contributions and for helping make the Credit Card Fraud Detection project better! Your efforts are greatly appreciated.
+Thank you for your contributions and for helping make the Blockchain Based Supply Chain System project better! Your efforts are greatly appreciated.
