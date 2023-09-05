@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustChain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Chela+One&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="logo-container">
+        <img id="logo-blockchain" src="./Images/logo-blockchain.png" alt="">
+        <h5 id="app-name">TrustChain</h5>
+    </div>
+    <div id="middle-container">
+        <h3 id="tagline">"Revolutionizing Supply Chains with Blockchain Technology."</h3>
+        <input id="productID-middle-container" type="number" placeholder="Product ID" required>
+        <input type="button" value="Track Product" id="trackProductBtn">
+    </div>
+    
+    <div id="bottom-overlay">
+        <div id="overlay">
+            <div id="createProductForm">
+                <h3 class="heading" id="productDetailsHeading">Product Details</h3>
+                <h3 id="productName">Name</h3>
+                <input id="productNameValue" type="text">
+                <h3 id="productQuantity">Quantity</h3>
+                <input id="productQuantityValue" type="number">
+                <h3 id="productPrice">Price</h3>
+                <input id="productPriceValue" type="number">
+                <button class="submit" id="createProductSubmit">Submit</button>
+            </div>
+            <div id="shipProductForm">
+                <h3 class="heading" id="productShippingDetailsHeading">Shipping Details</h3>
+                <h3 id="productID">Product ID</h3>
+                <input class="productIDValue" id="productIDValueShip" type="text">
+                <h3 id="distributorAddress">Distributor Address</h3>
+                <select name="distributorAddressValue" id="distributorAddressValue">
+                    <option value="0x6b8157353f1B78eDC1A6077290224c16FF204946">Distributor 1</option>
+                    <option value="0xeA31c015183f4de93f15D60BAdbe8a476ae78797">Distributor 2</option>
+                    <option value="0xA4792cC2Fc5BA4887125d024e3442688E2cfA610">Distributor 3</option>
+                    <option value="0x0eC2A4BBE9D7068393964Bed6deb2ec9fDF5da46">Distributor 4</option>
+                    <option value="0xcFAe49B56d0355E6BA6b943589cb4ad52d5D6b24">Distributor 5</option>
+                </select>
+                <button class="submit" id="shipProductSubmit">Submit</button>
+            </div>
+            <div id="deliverProductForm">
+                <h3 class="heading" id="productDeliveringDetailsHeading">Delivery Details</h3>
+                <h3 id="productID">Product ID</h3>
+                <input class="productIDValue" id="productIDValueDeliver" type="text">
+                <h3 id="retailerAddress">Retailer Address</h3>
+                <select name="retailerAddressValue" id="retailerAddressValue">
+                    <option value="0xA5C225BdC752aDC5C7468168d719FA521E456043">Retailer 1</option>
+                    <option value="0xEc3aDcEedE34a851Bf6d46479C645771306370dB">Retailer 2</option>
+                    <option value="0x89Bf0088b6537E7a23659a83edBa64E025B1a838">Retailer 3</option>
+                    <option value="0x5b5d84C6Ff5E64Ed8CD0f636DE138DECCF53eC3a">Retailer 4</option>
+                    <option value="0x2fA1897E4500Db2E6fDf9473F059c08549Dbe474">Retailer 5</option>
+                </select>
+                <button class="submit" id="deliverProductSubmit">Submit</button>
+            </div>
+            <div id="productAvailabilityForm">
+                <h3 class="heading" id="productAvailabilityDetailsHeading">Product Availability</h3>
+                <h3 id="productID">Product ID</h3>
+                <input id="productIDValueAvailable" class="productIDValue" type="number">
+                <button class="submit" id="availableProductSubmit">Submit</button>
+            </div>
+            <div id="productRatingForm">
+                <h3 class="heading" id="productDeliveringDetailsHeading">Product Rating</h3>
+                <h3 id="productID">Product ID</h3>
+                <input class="productIDValue" id="productIDValueGiveRating" type="text">
+                <h3 id="ratingHeading">Rating</h3>
+                <select name="productRating" id="productRatingValue">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button class="submit" id="RatingProductSubmit">Submit</button>
+            </div>
+            
+        </div>
+    </div>
+    <div id="top-container">
+        <p id="productCreationBtn">Create Product</p>
+        <p id="productShipping">Ship Product</p>
+        <p id="productDelivering">Deliver Product</p>
+        <p id="markProductOutOfStock">Product Availability</p>
+        <p id="markRating">Rate Product</p>
+        
+    </div>
+    
+    <div id="right-middle-container">
+        <p id="productInfo">
+            <h1 id="productJourneyHeading">Product Journey</h1>
+            <table>
+                <tr>
+                    <td>Product Name</td>
+                    <td id="productNameTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Product Quantity</td>
+                    <td id="productQuantityTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Manufacturer</td>
+                    <td id="manufacturerAddressTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Distributor</td>
+                    <td id="distributorAddressTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Retailer</td>
+                    <td id="retailerAddressTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Product Price</td>
+                    <td id="productPriceTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Product Status</td>
+                    <td id="productStatusAddressValue"></td>
+                </tr>
+                <tr>
+                    <td>Manufacturing Timestamp</td>
+                    <td id="manufacturingTimestampTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Delivery Timestamp</td>
+                    <td id="deliveringTimestampTableValue"></td>
+                </tr>
+                <tr>
+                    <td>Ratings</td>
+                    <td id="totalRatingsTableValue"></td>
+                </tr>
+            </table>
+        </p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+

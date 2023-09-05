@@ -1,0 +1,354 @@
+body{
+  background-color: #CEA9FF;
+}
+#logo-blockchain{
+ display: flex;
+ justify-content: flex-start;
+ border-radius: 50%;
+ height: 50px;
+ width: 50px;
+}
+#app-name{
+  display: flex;
+  position: absolute;
+  left: 60px;
+  top: 0px;
+  font-size: 20px;
+  color: aliceblue;
+}
+#tagline{
+  font-size: 60px;
+  width: 550px;
+  margin-left: 40px;
+  margin-top: 60px;
+  color: #FAF3FC;
+  font-family: 'Chela One', cursive;
+}
+#productID-middle-container::-webkit-inner-spin-button,
+#product-middle-container::-webkit-outer-spin-button{
+  display: none;
+}
+#productID-middle-container{
+  height: 40px;
+  width: 350px;
+  margin-left: 40px;
+  position: absolute;
+  bottom: 100px;
+  border: none;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #312B30;
+}
+#productID-middle-container::placeholder{
+  color: #F0E9FF;
+  font-size: 25px;
+  font-family: 'Pacifico', cursive;
+}
+#trackProductBtn{
+  height: 42px;
+  width: 200px;
+  margin-left: 393px;
+  position: absolute;
+  bottom: 100px;
+  border: none;
+  background-color: #312B30;
+  color: #FAF3FC;
+  font-size: 20px;
+}
+#trackProductBtn:hover{
+  background-color: #FAF3FC;
+  color: #312B30;
+  border: solid #312B30;
+}
+#top-container{
+  display: flex;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 75%;
+  height: 80px;
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 650px; /* Full width (cover the whole page) */
+  height: 450px; /* Full height (cover the whole page) */
+  top: 50px;
+  left: 300px;
+  background-color: #F0E9FF; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  opacity: 85%;
+  border-radius: 35px;
+  box-shadow: 12px 12px 20px #C54FA7 ;
+  border:solid #C54FA7;
+  
+}
+#bottom-overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CEA9FF;
+  z-index: 2;
+  cursor: pointer;
+}
+#productCreationBtn{
+  cursor: context-menu;
+  position: absolute;
+  right: 200px;
+  color: #F0E9FF;
+}
+#productShipping{
+  cursor: context-menu;
+  position: absolute;
+  right: 325px;
+  color: #F0E9FF;
+}
+#productDelivering{
+  cursor: context-menu;
+  position: absolute;
+  right: 450px;
+  color: #F0E9FF;
+}
+#markProductOutOfStock{
+  cursor: context-menu;
+  position: absolute;
+  right: 575px;
+  color: #F0E9FF;
+}
+#markRating{
+  cursor: context-menu;
+  position: absolute;
+  right: 725px;
+  color: #F0E9FF;
+}
+#getRating{
+  cursor: context-menu;
+  position: absolute;
+  right: 825px;
+  color: #F0E9FF;
+}
+#createProductForm{
+  display: none;
+}
+#productDetailsHeading{
+  font-size: 40px;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+}
+#productName{
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  top: 60px;
+}
+#productNameValue{
+  position: absolute;
+  left: 80px;
+  top: 130px;
+  height: 25px;
+  width: 300px;
+  border: solid #C54FA7;
+  border-radius: 5px;
+}
+#productQuantity{
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  top: 150px;
+}
+#productQuantityValue{
+  position: absolute;
+  left: 80px;
+  top: 220px;
+  height: 25px;
+  width: 300px;
+  border: solid #C54FA7;
+  border-radius: 5px;
+}
+#productQuantityValue::-webkit-inner-spin-button,
+#productQuantityValue::-webkit-outer-spin-button{
+  display: none;
+}
+#productPrice{
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  top: 245px;
+}
+#productPriceValue{
+  position: absolute;
+  left: 80px;
+  top: 310px;
+  height: 25px;
+  width: 300px;
+  border: solid #C54FA7;
+  border-radius: 5px;
+}
+#createProductSubmit{
+  position: absolute;
+  top: 375px;
+  left: 80px;
+  height: 30px;
+  width: 150px;
+  background-color: #545454;
+  border: none;
+  color: #FAF3FC;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#createProductSubmit:hover{
+  border: solid #545454;
+  color: #545454;
+  background-color: aliceblue;
+  font-size: 20px;
+}
+.heading{
+  font-size: 40px;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+}
+#productID{
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  top: 90px;
+}
+.productIDValue{
+  position: absolute;
+  left: 80px;
+  top: 160px;
+  height: 25px;
+  width: 300px;
+  border: solid #C54FA7;
+  border-radius: 5px;
+}
+#distributorAddress{
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  top: 190px;
+}
+#distributorAddressValue{
+  position: absolute;
+  left: 80px;
+  top: 260px;
+  height: 33px;
+  width: 310px;
+  border: solid #C54FA7;
+  border-radius: 5px;
+}
+.submit{
+  position: absolute;
+  top: 375px;
+  left: 80px;
+  height: 30px;
+  width: 150px;
+  background-color: #545454;
+  border: none;
+  color: #FAF3FC;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.submit:hover{
+  border: solid #545454;
+  color: #545454;
+  background-color: aliceblue;
+  font-size: 20px;
+}
+#shipProductSubmit{
+  top: 325px;
+}
+#createProducForm{
+  display: none;
+}
+#shipProductForm{
+  display: none;
+}
+#retailerAddress{
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  top: 190px;
+}
+#deliverProductForm{
+  display: none;
+}
+#deliverProductSubmit{
+  top: 325px;
+}
+#productAvailabilityForm{
+  display: none;
+}
+#availableProductSubmit{
+  top: 250px;
+}
+#productRatingForm{
+  display: none;
+}
+#ratingHeading{
+  font-size: 30px;
+  position: absolute;
+  left: 80px;
+  top: 190px;
+}
+#productRatingValue{
+  position: absolute;
+  left: 80px;
+  top: 260px;
+  height: 33px;
+  width: 310px;
+  border: solid #C54FA7;
+  border-radius: 5px;
+}
+#checkRatingForm{
+  display: none;
+}
+#right-middle-container{
+  height: 450px;
+  width: 595px;
+  background-color: #312B30;
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
+  display: none;
+  border-radius: 6px;
+  box-shadow: 12px 12px #F0E9FF;
+}
+#productJourneyHeading{
+  position: absolute;
+  right: 120px;
+  color: #FAF3FC;
+  font-size: 35px;
+}
+table{
+  position: absolute;
+  right: 5px;
+  color: white;
+  top: 90px;
+  font-size: 20px;
+  height: 325px;
+  width: 150px;
+  border:solid  2px;
+}
+td,tr,table{
+  border: solid 2px;
+  border-collapse: collapse;
+}
+#retailerAddressValue{
+  position: absolute;
+  left: 80px;
+  top: 260px;
+  height: 33px;
+  width: 310px;
+  border: solid #C54FA7;
+  border-radius: 5px;
+}
+
